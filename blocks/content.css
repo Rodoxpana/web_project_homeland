@@ -1,26 +1,26 @@
 /* .content {
 } */
-.intro {
+.main {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   max-width: 990px;
 }
-.intro__title {
+.main__title {
   max-width: 830px;
   font-family: "Inter-Black", sans-serif;
   font-size: 54px;
   line-height: 1.1;
   margin: 0;
 }
-.intro__quote {
+.main__quote {
   text-align: left;
   margin: 40px 0 10px;
   font-size: 24px;
   padding: 0;
   max-width: 738px;
 }
-.intro__quote-author {
+.main__quote-author {
   text-align: right;
   margin: 0;
   padding: 0;
@@ -29,7 +29,7 @@
   right: 6px;
   max-width: 732px;
 }
-.intro__paragraph {
+.main__paragraph {
   text-align: left;
   font-size: 16px;
   line-height: 1.6;
@@ -37,22 +37,22 @@
 }
 
 @media screen and (min-width: 545px) and (max-width: 1024px) {
-  .intro {
+  .main {
     max-width: 720px;
     margin: 0 24px;
   }
-  .intro__title {
+  .main__title {
     font-size: 45px;
     /* line-height: ; */
   }
 }
 
 @media screen and (min-width: 288px) and (max-width: 544px) {
-  .intro {
+  .main {
     max-width: 456px;
     margin: 0 16px;
   }
-  .intro__title {
+  .main__title {
     font-size: 32px;
     /* line-height: ; */
   }
