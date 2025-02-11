@@ -6,4 +6,4 @@ La pagina muestra en su encabezado una columna con titulo, subtitulo e imagen de
 
 La pagina es responsiva en tres niveles de ancho de pagina por medio de implementacion de media queries, blocks por secciones e imports.
 
-https://github.com/Rodoxpana/web_project_homeland
+https://rodoxpana.github.io/web_project_homeland/
