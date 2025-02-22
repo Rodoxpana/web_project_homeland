@@ -121,7 +121,7 @@
 
 @media screen and (min-width: 288px) and (max-width: 544px) {
   .places {
-    max-width: 288px;
+    max-width: 320px;
   }
   .places__card {
     display: grid;
@@ -140,18 +140,30 @@
     grid-area: location;
     max-width: 288px;
     font-size: 32px;
-    margin: 0 auto;
+    margin: 0 16px;
   }
 
   .places__card-author {
     grid-area: artist;
     max-width: 288px;
-    margin: 0 auto;
+    margin: 0 16px;
+  }
+
+  .places__card-artist {
+    grid-area: artist;
+    max-width: 288px;
+    margin: 0;
+  }
+
+  .places__card-author-name {
+    grid-area: artist;
+    max-width: 288px;
+    margin: 0;
   }
 
   .places__card-image {
     grid-area: image;
-    max-width: 288px;
+    max-width: 310px;
     margin: 0 auto;
   }
 
@@ -159,13 +171,13 @@
     grid-area: paragraph;
     max-width: 288px;
     font-size: 16px;
-    margin: 0 auto;
+    margin: 0 auto 25px;
   }
   .places__card-button {
     grid-area: button;
     max-width: 288px;
     font-size: 14px;
-    margin: 0 auto 50px;
+    margin: 30px auto;
     padding: 15px 47px;
   }
 }
