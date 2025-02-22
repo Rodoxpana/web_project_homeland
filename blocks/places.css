@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-.place__card {
+.places__card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /*grid-template-rows: 0.6fr, repeat(2, 0.8fr);*/
@@ -18,7 +18,7 @@
   column-gap: 40px;
 }
 
-.place__card-header {
+.places__card-header {
   grid-area: location;
   max-width: 460px;
   font-family: "Inter-regular", sans-serif;
@@ -28,22 +28,22 @@
   margin-bottom: 48px;
 }
 
-.place__card-image-button {
+.places__card-image-button {
   display: flex;
   flex-direction: column;
 }
 
-.place__card-image {
+.places__card-image {
   grid-area: image;
   max-width: 460px;
   padding-bottom: 48px;
 }
 
-.place__card-image:hover {
+.places__card-image:hover {
   opacity: 0.5;
 }
 
-.place__card-button {
+.places__card-button {
   grid-area: button;
   max-width: 289px;
   font-size: 18px;
@@ -56,7 +56,7 @@
   font-weight: 600;
   margin-bottom: 80px;
 }
-.place__card-button:hover {
+.places__card-button:hover {
   background: linear-gradient(
     90deg,
     rgba(2, 120, 254, 0.25) 0%,
@@ -64,7 +64,7 @@
   );
 }
 
-.place__card-author {
+.places__card-author {
   grid-area: artist;
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@
   max-width: 484px;
   margin: 0 0 48px;
 }
-.place__card-artist {
+.places__card-artist {
   grid-area: artist;
   max-width: 85px;
   font-family: "Inter";
@@ -83,13 +83,13 @@
   padding-bottom: 8px;
   /*line-height: 0.5;*/
 }
-.place__card-author-name {
+.places__card-author-name {
   max-width: 455px;
   margin: 0;
   padding: 0;
 }
 
-.place__card-paragraph {
+.places__card-paragraph {
   display: flex;
   flex-direction: column;
   grid-area: paragraph;
@@ -105,15 +105,15 @@
     max-width: 720px;
   }
 
-  .place__card-header {
+  .places__card-header {
     font-size: 42px;
   }
 
-  .place__card-image {
+  .places__card-image {
     max-width: 340px;
   }
 
-  .place__card-paragraph {
+  .places__card-paragraph {
     font-size: 16px;
   }
 }
@@ -122,7 +122,7 @@
   .places {
     max-width: 288px;
   }
-  .place__card {
+  .places__card {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -135,32 +135,32 @@
     gap: 30px;
   }
 
-  .place__card-header {
+  .places__card-header {
     grid-area: location;
     max-width: 288px;
     font-size: 32px;
     margin: 0 auto;
   }
 
-  .place__card-author {
+  .places__card-author {
     grid-area: artist;
     max-width: 288px;
     margin: 0 auto;
   }
 
-  .place__card-image {
+  .places__card-image {
     grid-area: image;
     max-width: 288px;
     margin: 0 auto;
   }
 
-  .place__card-paragraph {
+  .places__card-paragraph {
     grid-area: paragraph;
     max-width: 288px;
     font-size: 16px;
     margin: 0 auto;
   }
-  .place__card-button {
+  .places__card-button {
     grid-area: button;
     max-width: 288px;
     font-size: 14px;
