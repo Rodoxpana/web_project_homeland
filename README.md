@@ -6,4 +6,8 @@ La pagina muestra en su encabezado una columna con titulo, subtitulo e imagen de
 
 La pagina es responsiva en tres niveles de ancho de pagina por medio de implementacion de media queries, blocks por secciones e imports.
 
+Sprint 6, Fase 2 de la entrega.
+
+Agregando dos secciones de grid responsivas con botones interactivos y color gradiante para volver la pagina un poco mas interactiva y llamativa.
+
 https://rodoxpana.github.io/web_project_homeland/

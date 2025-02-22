@@ -97,7 +97,6 @@
   margin-top: 0%;
   margin-bottom: 25px;
   font-weight: 400;
-  font-size: 18px;
   line-height: 1.6;
 }
 
@@ -113,7 +112,59 @@
   .place__card-image {
     max-width: 340px;
   }
+
   .place__card-paragraph {
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 288px) and (max-width: 544px) {
+  .places {
+    max-width: 288px;
+  }
+  .place__card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "location"
+      "artist"
+      "image"
+      "paragraph"
+      "button";
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .place__card-header {
+    grid-area: location;
+    max-width: 288px;
+    font-size: 32px;
+    margin: 0 auto;
+  }
+
+  .place__card-author {
+    grid-area: artist;
+    max-width: 288px;
+    margin: 0 auto;
+  }
+
+  .place__card-image {
+    grid-area: image;
+    max-width: 288px;
+    margin: 0 auto;
+  }
+
+  .place__card-paragraph {
+    grid-area: paragraph;
+    max-width: 288px;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  .place__card-button {
+    grid-area: button;
+    max-width: 288px;
+    font-size: 14px;
+    margin: 0 auto 50px;
+    padding: 15px 47px;
   }
 }
