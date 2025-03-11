@@ -6,16 +6,16 @@
 .places__card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /*grid-template-rows: 0.6fr, repeat(2, 0.8fr);*/
+  grid-template-rows: 1fr;
   grid-template-areas:
     "location artist"
     "image    paragraph"
-    "image    paragraph"
     "button   paragraph";
   max-width: 984px;
-  height: 100%;
-  margin: 0 auto;
+  /* height: 100%; */
+  margin: 0 auto 80px;
   column-gap: 40px;
+  row-gap: 48px;
 }
 
 .places__card-header {
@@ -24,13 +24,7 @@
   font-family: "Inter-regular", sans-serif;
   font-weight: 900;
   font-size: 72px;
-  margin-top: 0%;
-  margin-bottom: 48px;
-}
-
-.places__card-image-button {
-  display: flex;
-  flex-direction: column;
+  margin: 0 0;
 }
 
 .places__card-image {
@@ -54,8 +48,6 @@
   border-radius: 5px;
   padding: 13px 20px;
   font-weight: 600;
-  margin-top: 48px;
-  margin-bottom: 80px;
 }
 .places__card-button:hover {
   background: linear-gradient(
@@ -71,7 +63,6 @@
   flex-direction: column;
   justify-content: flex-end;
   max-width: 484px;
-  margin: 0 0 48px;
 }
 .places__card-artist {
   grid-area: artist;
@@ -82,7 +73,6 @@
   color: #aaaaaa;
   margin: 0%;
   padding-bottom: 8px;
-  /*line-height: 0.5;*/
 }
 .places__card-author-name {
   max-width: 455px;
@@ -96,7 +86,6 @@
   grid-area: paragraph;
   max-width: 484px;
   margin-top: 0%;
-  margin-bottom: 25px;
   font-weight: 400;
   line-height: 1.6;
 }
@@ -105,9 +94,15 @@
   .places {
     max-width: 720px;
   }
+  .places__card {
+    margin: 0 auto 72px;
+    column-gap: 28px;
+    row-gap: 48px;
+  }
 
   .places__card-header {
     font-size: 42px;
+    margin: 0;
   }
 
   .places__card-image {
@@ -132,52 +127,46 @@
       "image"
       "paragraph"
       "button";
-    margin: 0 auto;
+    max-width: 288px;
+    margin: 0 auto 50px;
     gap: 30px;
   }
 
   .places__card-header {
-    grid-area: location;
     max-width: 288px;
     font-size: 32px;
     margin: 0 16px;
   }
 
   .places__card-author {
-    grid-area: artist;
     max-width: 288px;
     margin: 0 16px;
   }
 
   .places__card-artist {
-    grid-area: artist;
     max-width: 288px;
     margin: 0;
   }
 
   .places__card-author-name {
-    grid-area: artist;
     max-width: 288px;
     margin: 0;
   }
 
   .places__card-image {
-    grid-area: image;
     max-width: 310px;
     margin: 0 auto;
   }
 
   .places__card-paragraph {
-    grid-area: paragraph;
     max-width: 288px;
     font-size: 16px;
     margin: 0 auto 25px;
   }
   .places__card-button {
-    grid-area: button;
     max-width: 288px;
     font-size: 14px;
-    margin: 30px auto;
+    margin: -5px auto;
     padding: 15px 47px;
   }
 }
